@@ -1,0 +1,56 @@
+<!DOCtYPE hTml>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Java Programming-oop-UCSD</title>
+</head>
+<body>
+<h1>Java Programming-oop-UCSD Setup Instruction </h1>
+<hr>
+
+<h2>Setup for Windows host</h2>
+<ol>
+	<li>JDK: Oracle 8 </li>
+	<li>Eclipse latest version</li>
+</ol>
+
+
+<h2>Setup for Ubuntu</h2>
+<ol>
+	<li>#setup proxy: Network proxy GUI: ...</li>
+	<li>setup JDK
+		<ol>
+			<li>$ sudo -E add-apt-repository ppa:webupd8team/java //-E option to use system proxy if you have one.</li>
+			<li>$ sudo apt-get update </li>
+			<li>$ sudo apt-get install oracle-java8-installer</li>
+		</ol>
+	</li>
+	<li>setup eclipse
+		<ol>
+			<li>$ sudo apt-cache search eclipse</li>
+			<li>$ sudo apt-get install eclipse</li>
+		</ol>
+	</li>
+
+</ol>
+<p> # may need to do below step to remove the previous errors
+	## sudo rm /var/lib/apt/lists/lock
+	## sudo kill apt-PID
+</p>
+
+<h2>Setup common part: Configure eclipse http proxy server</h2>
+ <ol>
+ 	<li>"Window", Preference", "General>Network Connection": Window proxy-networking, manual: child-prc.intel.com 914</li>
+ 	<li>"Window", Preference", "JAVA", JRE RUNTIME "-Dhttp.proxyHost=child-prc.intel.com -Dhttp.proxyPort=914</li>
+ </ol>
+
+<h1> resources: </h1>
+<hr>
+<ul>
+	<li><a href=http://unfoldingmaps.org/javadoc/ target="_blank" title="Like Our Page!"> http://unfoldingmaps.org/javadoc/</a></li>
+	<li><a href=https://processing.org/reference target="_blank" title="like our page"> https://processing.org/reference</a></li>
+	<li><a href=http://api.map.baidu.com/lbsapi/getpoint/index.html target="_blank" title="baidu map coordinates"> http://api.map.baidu.com/lbsapi/getpoint/index.html: baidu map coordinates</a></li>
+</ul>
+
+</body>
+</html>
